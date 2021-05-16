@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import styled, { keyframes, css } from "styled-components";
 import Theming from "./components/Theming";
+import BasicStyle from "./filbertStyles/components/BasicStyle";
 
 const Container = styled.div`
   height: 100vh;
@@ -56,19 +57,24 @@ const Disable = styled.button`
 function App() {
   return (
     <Container>
-      <Navbar />
+      {/* <Navbar />
       <Link>Unstyled Link</Link>
       <br />
       <StyledLink>Styled with SC</StyledLink>
       <Input type="text" />
       <br />
-      <Input type="text" inpColor="red" />
+      <Input type="text" inpColor="red" /> */}
       {/* <Animate>&gt; &lt;</Animate> */}
-      <br />
+      {/* <br />
       <Disable priCo bd="1px solid black">
-        Disable{" "}
+        Disable
       </Disable>
-      <Theming />
+      <Theming /> */}
+
+      {/* ======= */}
+
+      {/* filber-js styles */}
+      <BasicStyle />
     </Container>
   );
 }
