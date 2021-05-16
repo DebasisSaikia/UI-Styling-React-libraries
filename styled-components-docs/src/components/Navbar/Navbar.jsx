@@ -27,8 +27,26 @@ const StyledButton = styled(Button)`
     }
   }
 `;
+const PrimaryButton = styled.button`
+  height: 50px;
+  width: 200px;
+  border: 2px solid #111;
+  outline: none;
+  cursor: pointer;
+  background-color: ${(props) => (props.primary ? "yellow" : "#fff")};
+  color: ${(props) => (props.primary ? "#111" : "#111")};
+`;
 const Label = styled.label`
   font-size: 25px;
+`;
+const Extends = styled.div`
+  color: palevioletred;
+  font-size: 1em;
+  width: 200px;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px;
 `;
 /* background-color: ${(props) => props.color}; */
 
@@ -40,7 +58,10 @@ const Navbar = () => {
       <NavLeft>
         <StyledButton bgColor="blue" text="Sign Up" />
       </NavLeft>
-      <NavRight></NavRight>
+      <NavRight>
+        <PrimaryButton primary>Log in</PrimaryButton>
+      </NavRight>
+      <Extends>Extended</Extends>
     </NavContainer>
   );
 };
