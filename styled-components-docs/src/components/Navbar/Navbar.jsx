@@ -6,6 +6,7 @@ const NavContainer = styled.nav`
   height: 80px;
   width: 100%;
   background-color: #111;
+  display: flex;
 `;
 
 const NavLeft = styled.div`
@@ -48,6 +49,7 @@ const Extends = styled.div`
   border: 2px solid palevioletred;
   border-radius: 3px;
 `;
+
 /* background-color: ${(props) => props.color}; */
 
 const NavRight = styled.div``;
