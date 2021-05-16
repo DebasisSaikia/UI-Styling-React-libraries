@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
+import Theming from "./components/Theming";
 
 const Container = styled.div`
   height: 100vh;
@@ -26,6 +27,32 @@ const Input = styled.input`
   color: ${(props) => props.inpColor || "olive"};
 `;
 
+const animate = keyframes`
+from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const Animate = styled.div`
+  animation: ${animate} 2s linear infinite;
+  font-size: 1.2rem;
+`;
+const Disable = styled.button`
+  width: 200px;
+  height: 30px;
+  border: ${(props) => props.bd || "none"};
+  ${(props) =>
+    props.priCo &&
+    css`
+      background: palevioletred;
+      color: white;
+    `}
+`;
+
 function App() {
   return (
     <Container>
@@ -36,6 +63,12 @@ function App() {
       <Input type="text" />
       <br />
       <Input type="text" inpColor="red" />
+      {/* <Animate>&gt; &lt;</Animate> */}
+      <br />
+      <Disable priCo bd="1px solid black">
+        Disable{" "}
+      </Disable>
+      <Theming />
     </Container>
   );
 }
