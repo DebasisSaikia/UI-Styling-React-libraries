@@ -57,8 +57,8 @@ const Disable = styled.button`
 function App() {
   return (
     <Container>
-      {/* <Navbar />
-      <Link>Unstyled Link</Link>
+      <Navbar />
+      {/*  <Link>Unstyled Link</Link>
       <br />
       <StyledLink>Styled with SC</StyledLink>
       <Input type="text" />
