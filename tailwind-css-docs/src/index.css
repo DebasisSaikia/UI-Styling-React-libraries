@@ -24,4 +24,10 @@ h2 {
   width: 100%;
   max-width: 1200px;
   padding: 20px;
+  grid-gap: 2rem;
+}
+
+h3 {
+  padding-bottom: 10px;
+  padding-top: 10px;
 }

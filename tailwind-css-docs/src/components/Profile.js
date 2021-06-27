@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import PlaceholderPro from '../placeholders/PlaceholderPro';
 
 const Profile = () => {
   const [profile, setProfile] = useState (null);
@@ -16,13 +17,13 @@ const Profile = () => {
       <h2>User Profile</h2>
       {profile &&
         <div className="profile">
-          <h3>{profile.username}</h3>
+          <h3 className="font-bold">{profile.username}</h3>
           <p>{profile.email}</p>
           <a href={profile.website}>
             {profile.website}
           </a>
         </div>}
-      {!profile && <div>Loading...</div>}
+      {!profile && <PlaceholderPro />}
     </div>
   );
 };
