@@ -7,3 +7,11 @@
 .text2 {
     @include commonStyles($light-color);
 }
+div {
+    h1 {
+        @include commonStyles($color);
+    }
+    h2 {
+        @include commonStyles($light-color, rgb(48, 144, 253));
+    }
+}

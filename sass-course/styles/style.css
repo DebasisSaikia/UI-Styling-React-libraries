@@ -14,4 +14,21 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #ec9146;
 }
+
+div h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1c74f8;
+}
+
+div h2 {
+  background-color: #3090fd;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ec9146;
+}
 /*# sourceMappingURL=style.css.map */
