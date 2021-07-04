@@ -1,0 +1,10 @@
+@mixin commonStyles($col, $background: rgb(22, 22, 21)) {
+    @if ($background !=rgb(22, 22, 21)) {
+        background-color: $background;
+    }
+    font-size: $main_font;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $col;
+}

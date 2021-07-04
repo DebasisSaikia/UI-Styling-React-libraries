@@ -1,8 +1,9 @@
-@import './variables.scss';
+@import "./variables.scss";
+@import "./mixins.scss";
 
-.text{
-    color: red;
-    font-size: $main_font;
-    letter-spacing: 2px;
-    font-family: fantasy;
+.text {
+    @include commonStyles($color, orange);
+}
+.text2 {
+    @include commonStyles($light-color);
 }

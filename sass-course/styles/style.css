@@ -1,7 +1,17 @@
 .text {
-  color: red;
-  font-size: 2.7rem;
+  background-color: orange;
+  font-size: 3rem;
   letter-spacing: 2px;
-  font-family: fantasy;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1c74f8;
+}
+
+.text2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ec9146;
 }
 /*# sourceMappingURL=style.css.map */
