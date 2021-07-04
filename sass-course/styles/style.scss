@@ -1,0 +1,8 @@
+@import './variables.scss';
+
+.text{
+    color: red;
+    font-size: $main_font;
+    letter-spacing: 2px;
+    font-family: fantasy;
+}
